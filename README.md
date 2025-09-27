@@ -60,9 +60,9 @@ Data telah berhasil dihapus.
   - *Kos* guna sebagai tempat atribut & struktur dari data kos itu
   - *KosBulanan* guna untuk menginput harga kos per bulan
   - *KosTahunan* guna sebagai menginput apakah si penyewa akan mendapatkan harga yang berbeda dibandingkan kos bulanan/diskon
-  - 
-3. Package KosService berisi class Service sebagai tempat logika CRUD pada data kos, dan juga sebagai tempat logika dari subclass
-4. Package Main berisi Main, ini merupakan titik awal pada program data kos ini, menampilkan menu & memanggil class Service
+2. Package KosService berisi class Service sebagai tempat logika CRUD pada data kos, dan juga sebagai tempat logika dari subclass
+3. Package Main berisi class Main, ini merupakan titik awal pada program data kos ini, menampilkan menu & memanggil class Service
+4. Package Interfaces berisi class Fasilitas yang dimana berisikan 2 method yaitu **infoKos** dan **tampilFasilitas**
 
 # Penjelasan Tambahan Code
 Pada program ini saya abstraction dengan minimal 1 abstrak dan 1 interface. Untuk penerapan abstrak saya terapkan pada class **Kos** dengan method **infoKos();** dan wajib diimplementasikan setiap subclass. Kemudian untuk penerapan interface saya terapkan dengan membuat package baru dengan nama **Interfaces** dan di dalamnya memiliki 1 class yaitu Fasilitas yang berisikan 2 method yaitu **tampilFasilitas** dan **infoKos**. Selanjutnya, penerapan polymorphism dengan minimal 1 overloading dan 1 overriding, untuk penerapan overloading diterapkan pada class **Kos** yaitu **hitungBiaya()**, begitupun dengan penerapan overriding juga di class yang sama yaitu class **Kos** dengan method**toString()**.
